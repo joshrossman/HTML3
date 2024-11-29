@@ -1,0 +1,42 @@
+<html>
+<head><title>New Forms</title></head>
+<body>
+<form>
+<legend><h3>Coding Camp Registration</h3>
+</legend>
+<fieldset name="child-info" required>
+<label for="child-info">Child Information:<br></label>
+<label for="reg-name">Paticpants Name:</label>
+<input type="text" placeholder="Child's name" required>
+
+<label for="phone"><br>Parent Phone number</label>
+<input type="text" pattern="[0-9]{10}" name="phone" id="phone" placeholder="Please enter Valid 10 digit phone number" required>
+
+<label for="birthday"><br>Birthdate</label>
+<input type="date" name="birthdate" id = "birthdate" required>
+</fieldset>
+
+<fieldset name="education">
+<label for="education">Coding Background:<br></label>
+<label for="interests">Coding Languages Interests:</label>
+<select>
+	<option>HTML</option>
+    <option>Javascript</option>
+    <option>Python</option>
+    <option>SQL</option>
+    <option>REACT</option>
+</select>
+<label for="background">Current Coding Experience:<br></label>
+<input type="radio"><label>Beginner</label>
+<input type="radio"><label>Intermediate</label>
+<input type="radio"><label>Advanced</label>
+<br>
+<input type="Submit">
+</fieldset>
+<div role="alert" aria-live="assertive">Please fill out all inputs for the form.</div>
+</form>
+
+</body>
+
+
+</html>
